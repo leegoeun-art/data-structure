@@ -67,7 +67,49 @@ void main() {
 		int pay;
 	};
 
+
 	struct employee Lee = { "Ann", 2022, 5200 };
 
 	return 0;
 }
+
+
+
+test. 탈출조건과 실행되는 조건에다가 블랭크를 걸어서 어떤게 들어가야되는지 쓰세요 고ㅡ르세요.
+
+break point 걸어서 f11 f10 한번씩 올려놓고
+조사식에 올려놓고 어느 순간에 바뀌는지 보ㅕㅁㄴ 
+recursive call 이 어떻게 동작되는지 볼수잇음.
+
+
+
+과제 4 ---------------------------
+	#include <stdio.h>
+
+long int fact(int);
+
+void main() {
+	int n, result;
+	printf("\n 정수를 입력하세요: ");
+	scanf("%d", &n);
+	result = fact(n);
+	printf("\n\n %d 팩토리얼 값은 %ld입니다.\n", n, result);
+	getchar(); getchar();
+}
+
+long int fact(int n) {
+	int value;
+	if (n <= 1) 
+		printf("\n fact(1) 함수 호출!");
+		printf("\n fact(1) 값 1 반환!");
+		return 1;
+	}
+	else {
+		printf("\n fact(%d) 함수 호출!", n);
+		value = (n * fact(n - 1));
+		printf("\n fact(1) 함수 호출!");
+		return value;
+	}
+}
+
+	
