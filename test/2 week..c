@@ -55,3 +55,19 @@ void main() {
 	}
 	getchar();
 }
+
+실습 6 구조체 변수 확인하기
+	#include <stdio.h>
+
+void main() {
+
+	struct employee {
+		char name[10];
+		int year;
+		int pay;
+	};
+
+	struct employee Lee = { "Ann", 2022, 5200 };
+
+	return 0;
+}
