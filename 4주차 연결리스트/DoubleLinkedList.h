@@ -1,12 +1,12 @@
 #pragma once
-//ÀÌÁß ¿¬°á ¸®½ºÆ®ÀÇ ³ëµå ±¸Á¶¸¦ ±¸Á¶Ã¼·Î Á¤ÀÇ
+//ì´ì¤‘ ì—°ê²° ë¦¬ìŠ¤íŠ¸ì˜ ë…¸ë“œ êµ¬ì¡°ë¥¼ êµ¬ì¡°ì²´ë¡œ ì •ì˜
 typedef struct ListNode {
-	struct ListNode* llink;  // ¿ŞÂÊ(¼±Çà) ³ëµå¿¡ ´ëÇÑ ¸µÅ©
+	struct ListNode* link;  // ì™¼ìª½(ì„ í–‰) ë…¸ë“œì— ëŒ€í•œ ë§í¬
 	char data[4];
-	struct ListNode* rlink; // ¿À¸¥ÂÊ(´ÙÀ½) ³ëµå¿¡ ´ëÇÑ ¸µÅ©
+	struct ListNode* rlink; // ì˜¤ë¥¸ìª½(ë‹¤ìŒ) ë…¸ë“œì— ëŒ€í•œ ë§í¬
 } listNode;
 		
-//¸®½ºÆ® ½ÃÀÛÀ» ³ªÅ¸³»´Â head ³ëµå¸¦ ±¸Á¶Ã¼·Î Á¤ÀÇ
+//ë¦¬ìŠ¤íŠ¸ ì‹œì‘ì„ ë‚˜íƒ€ë‚´ëŠ” head ë…¸ë“œë¥¼ êµ¬ì¡°ì²´ë¡œ ì •ì˜
 typedef struct {
 	listNode* head;
 } linkedList_h;
