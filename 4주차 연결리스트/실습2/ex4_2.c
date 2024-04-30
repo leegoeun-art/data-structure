@@ -5,7 +5,7 @@ typedef struct ListNode {
 	struct ListNode* link;
 } listNode;
 
-//¸®½ºÆ®ÀÇ ½ÃÀÛÀ» ³ªÅ¸³»´Â head ³ëµå¸¦ ±¸Á¶Ã¼·Î Á¤ÀÇ
+//ë¦¬ìŠ¤íŠ¸ì˜ ì‹œì‘ì„ ë‚˜íƒ€ë‚´ëŠ” head ë…¸ë“œë¥¼ êµ¬ì¡°ì²´ë¡œ ì •ì˜
 typedef struct {
 	listNode* head;
 } linkedList_h;
